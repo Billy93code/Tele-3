@@ -243,10 +243,14 @@
         }
 
         .navbar {
-            background: transparent;
+            background: #185a9d;
             padding: 0.5rem 0.7rem;
+            min-height: 56px;
+            width: 100vw;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10000;
         }
-
         .navbar-brand {
             font-size: 1.3rem;
             font-weight: 700;
@@ -257,13 +261,31 @@
             display: flex;
             align-items: center;
             gap: 0.4em;
-            width: 220px; /* Explicit width for stability */
+            width: 100%;
+            max-width: 220px;
+            box-sizing: border-box;
         }
         .navbar-brand .bi {
             font-size: 1.7rem;
             min-width: 1.7rem;
             min-height: 1.7rem;
             display: inline-block;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                min-height: 48px;
+                padding: 0.3rem 0.3rem;
+            }
+            .navbar-brand {
+                font-size: 1.1rem;
+                min-height: 1.7rem;
+                max-width: 160px;
+            }
+            .navbar-brand .bi {
+                font-size: 1.3rem;
+                min-width: 1.3rem;
+                min-height: 1.3rem;
+            }
         }
 
         .navbar-toggler {
