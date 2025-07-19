@@ -71,6 +71,60 @@
     }
     </script>
     <style>
+        /* Fix layout shift for floating Telegram button */
+        #floating-telegram-btn {
+            position: fixed;
+            left: 1.2rem;
+            bottom: 1.2rem;
+            z-index: 9999;
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            color: #fff !important;
+            border-radius: 2.5rem;
+            box-shadow: 0 4px 16px 0 rgba(24, 90, 157, 0.18);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+            min-width: 220px;
+            min-height: 48px;
+            width: 220px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            padding: 0.7em 1.5em;
+            will-change: transform, opacity;
+            box-sizing: border-box;
+            transition: none;
+        }
+        #floating-telegram-btn span {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        #floating-telegram-btn i {
+            font-size: 1.7rem;
+            vertical-align: middle;
+        }
+        #floating-telegram-btn:hover,
+        #floating-telegram-btn:focus {
+            background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+            color: #fff !important;
+            box-shadow: 0 6px 24px 0 rgba(24, 90, 157, 0.22);
+        }
+        @media (max-width: 600px) {
+            #floating-telegram-btn {
+                left: 0.5rem;
+                bottom: 0.5rem;
+                padding: 0.6em 1em;
+                font-size: 1rem;
+                min-width: 160px;
+                min-height: 40px;
+                width: 160px;
+                height: 40px;
+            }
+        }
         /* Critical CSS for floating Telegram button to reduce layout shift */
         #floating-telegram-btn {
             position: fixed;
