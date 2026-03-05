@@ -1,0 +1,38 @@
+{
+  "name": "טלגראס כיוונים – מדריך 2026",
+  "short_name": "טלגראס",
+  "description": "מדריך מקיף לשנת 2026 על טלגראס כיוונים, קבוצות טלגרם, וויד ישראל, TELEGRASS ISRAEL – אבטחה, הונאות וטיפים.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "he",
+  "dir": "rtl",
+  "background_color": "#f0f4f8",
+  "theme_color": "#185a9d",
+  "categories": ["education", "news"],
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "label": "טלגראס כיוונים – מדריך 2026"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

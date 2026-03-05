@@ -1,0 +1,5 @@
+Contact: https://bit.ly/Telegrass-kivunim
+Preferred-Languages: he, en
+Canonical: https://telegrass-israel.xyz/.well-known/security.txt
+Policy: https://telegrass-israel.xyz/מדיניות-פרטיות
+Expires: 2027-03-05T00:00:00.000Z
